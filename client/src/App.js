@@ -1,26 +1,34 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-import Header from './Header';
+import Header from './Header'; 
 import Hero from './Hero';
-import SelectGame from './SelectGame'; 
+import SelectGame from './SelectGame';
 
 function App() {
 
   return (
-    <div className="app">
+    <BrowserRouter>
+      <div className="app">
 
-      <Header />
+        <Header />
 
-      <Hero />
+        <Hero />
 
-      <SelectGame />
+        <SelectGame />
 
-      <section className="some-content">
-       // rest of component
-      </section>
+        <section className="some-content">
+          {/* Rest of app */}
+        </section>
 
-    </div>
+      </div>
+    </BrowserRouter>
   );
+
 }
 
 export default App;
+
+// Render App component
+ReactDOM.render(<App />, document.getElementById('root'));

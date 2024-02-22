@@ -1,0 +1,38 @@
+# Add changes  
+git add .
+
+# Commit changes
+git commit -m "Your message" 
+
+# Push to master 
+git push origin master
+
+# Pull latest from master
+git pull origin master
+
+
+
+# Add client changes
+git add client
+
+# Commit 
+git commit -m "Update client"
+
+# Push client folder only
+git push origin master --client
+
+# Pull latest client
+git pull origin master --client
+
+
+# Add server changes
+git add server
+
+# Commit
+git commit -m "Update server" 
+
+# Push server folder only  
+git push origin master --server
+
+# Pull latest server
+git pull origin master --server

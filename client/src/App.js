@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
+
+import './App.css';
 import Header from './Header'; 
 import Hero from './Hero';
 import SelectGame from './SelectGame';
